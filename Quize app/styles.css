@@ -1,0 +1,134 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  .quiz-container {
+    background: #2c3e50;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #timer {
+    font-size: 18px;
+    color: #f39c12;
+  }
+  
+  .quiz-box {
+    text-align: left;
+  }
+  
+  #question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #answers-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #answers-list li {
+    margin: 10px 0;
+  }
+  
+  .answer-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    background-color: #34495e;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .answer-btn:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+  }
+  
+  .answer-btn.correct {
+    background-color: #2ecc71;
+    cursor: default;
+  }
+  
+  .answer-btn.wrong {
+    background-color: #e74c3c;
+    cursor: default;
+  }
+  
+  #next-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+    transition: background-color 0.3s;
+  }
+  
+  #next-btn:hover {
+    background-color: #2471a3;
+  }
+  
+  .quiz-result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .quiz-result h2 {
+    font-size: 24px;
+    color: #f39c12;
+  }
+  
+  .quiz-result p {
+    font-size: 18px;
+    color: #ecf0f1;
+  }
+  
+  #restart-btn {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  #restart-btn:hover {
+    background-color: #229954;
+  }
+  
