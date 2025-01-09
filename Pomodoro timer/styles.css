@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+  }
+  
+  /* Container */
+  .pomodoro-container {
+    text-align: center;
+    background: #2c3e50;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #f1c40f;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Timer */
+  .timer {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #ecf0f1;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Status */
+  #status {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1abc9c;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Controls */
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .controls button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background: #1abc9c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .controls button:active {
+    transform: scale(0.95);
+  }
+  
+  .controls button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 400px) {
+    .pomodoro-container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .timer {
+      font-size: 48px;
+    }
+  
+    .controls button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
